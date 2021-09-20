@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/title.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/title.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,14 +14,68 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>BURGER HOUSE </title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>BURGER HOUSE</title>
   </head>
   <body>
     <!-- Group 1  -->
+
     <div class="group1">
       <div class="container">
+        <div class="ms-auto topp">
+          <a href=""><img src="img/g11.png" alt="" /></a>
+          <span class="ps-3">Express Delivery +1 234 567 890</span>
+        </div>
+
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light bg-transparent"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/g1.png" alt="" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse mt-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">our story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
         <!-- <img src="img/gm1.png" alt=""> -->
-        <div class="top">
+        <!-- <div class="top">
           <div class="left">
             <a href=""><img src="img/g1.png" alt="" /></a>
           </div>
@@ -35,7 +89,7 @@
               <li><a href="">contact us </a></li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <div class="bottom">
           <p>It is a good time for the great taste of burgers</p>
           <h1>burgur</h1>
@@ -90,18 +144,18 @@
     <div class="group3">
       <img src="img/g3.png" alt="" width="100%" />
       <div class="container">
-        <div class="glry">
-          <div class="item">
+        <div class="glry row">
+          <div class="item col-md-4">
             <h1>Lorem ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button>order now</button>
           </div>
-          <div class="item">
+          <div class="item col-md-4">
             <h1>Lorem ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button>order now</button>
           </div>
-          <div class="item">
+          <div class="item col-md-4">
             <h1>Lorem ipsum dolor</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button>order now</button>
@@ -163,9 +217,9 @@
     <!-- group 6 -->
     <div class="group6">
       <div class="container">
-        <div class="footer">
-          <div class="left">
-            <img src="img/g6.png" alt="" />
+        <div class="footer row">
+          <div class="left col-md-6">
+            <img class="img-fluid" src="img/g6.png" alt="" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque accusantium ea perferendis soluta porro beatae impedit
@@ -173,7 +227,7 @@
             </p>
             <span>© Company Name 2020. All rights reserved.</span>
           </div>
-          <div class="right">
+          <div class="right col-md-6">
             <p>
               <i class="fa fa-map-marker fa-2x"></i> Main Road, Building Name,
               Country
@@ -181,7 +235,7 @@
             <span>
               <i class="fa fa-envelope fa-lg"></i> info@companyname.com</span
             >
-            <ul>
+            <ul class="mt-4">
               <li>
                 <a href=""><i class="fa fa-instagram"></i></a>
               </li>
@@ -199,5 +253,12 @@
         </div>
       </div>
     </div>
+
+    <!-- !-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

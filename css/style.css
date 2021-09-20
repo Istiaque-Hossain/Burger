@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1140px;
+  width: 100%;
   margin: auto;
   display: flow-root;
 }
@@ -43,7 +43,7 @@ a {
   font-family: "Bebas Neue", cursive;
   font-weight: 500;
   letter-spacing: 3px;
-  padding-left:20px;
+  padding-left: 20px;
   padding-right: 10px;
 }
 .top .right span {
@@ -158,7 +158,7 @@ a {
   line-height: 1;
 }
 .choose {
-  width: 1140px;
+  width: 100%;
   text-align: center;
   padding: 80px;
 }
@@ -316,85 +316,265 @@ a {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.group6{
-    width: 100%;
-    padding: 50px;
-
+.group6 {
+  width: 100%;
+  padding: 50px;
 }
 
-.group6 .container{
-    width: 100%;
-    background-image: url(../img/g66.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    padding: 20px;
-
+.group6 .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/g66.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  padding: 20px;
 }
-.footer .left{
-    width: 50%;
-    padding: 70px 40px;
-
+.footer .left {
+  width: 50%;
+  padding: 70px 40px;
 }
-.footer .left p{
-    color:rgb(202, 193, 193);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    padding: 40px 0px;
-    padding-right: 40px;
+.footer .left p {
+  color: rgb(202, 193, 193);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 40px 0px;
+  padding-right: 40px;
 }
-.footer .left span{
-    color:rgb(202, 193, 193);
-    font-weight: lighter;
-    font-family: 'Bebas Neue', cursive;
-    padding-top: 118px;
-    display: block;
+.footer .left span {
+  color: rgb(202, 193, 193);
+  font-weight: lighter;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 118px;
+  display: block;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer .right{
-    width: 50%;
-    text-align: left;
-    font-size: large;
-    letter-spacing: 1px;
-    padding-left:  20px;
-    padding-left: 155px;
-
+.footer .right {
+  width: 50%;
+  text-align: left;
+  font-size: large;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  padding-left: 155px;
 }
-.right p{
-    color:white;
-    font-family: 'Bebas Neue', cursive;
-    padding-top: 200px;
-    vertical-align: middle;
-
-
-
+.right p {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 200px;
+  vertical-align: middle;
 }
-.right span{
-    color:white;
-    font-family: 'Bebas Neue', cursive;
-
+.right span {
+  color: white;
+  font-family: "Bebas Neue", cursive;
 }
 .fa {
-    padding: 10px;
-    color: white;
-    vertical-align: middle;
+  padding: 10px;
+  color: white;
+  vertical-align: middle;
 }
-.right ul li{
-    display: inline-block;
+.right ul li {
+  display: inline-block;
 }
-.footer .right ul{
-    padding-top: 125px ;
-    padding-left: 193px;
+.footer .right ul {
+  padding-top: 125px;
+  padding-left: 193px;
 }
-.right ul li a i{
-    width: 40px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 50px;
-    text-align: center;
-    margin-right: 20px;
-    /* position: absolute; */
+.right ul li a i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 20px;
+  /* position: absolute; */
+}
+.nav-link {
+  color: #3d2514 !important;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-decoration: underline !important;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+.topp {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  color: #3d2514;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/*....................... Media Query................ */
+@media (min-width: 300px) and (max-width: 574px) {
+  .right p {
+    padding-top: 0;
+  }
+  .footer .right ul {
+    padding: 0;
+    display: flex;
+  }
+  .footer .left span {
+    padding-top: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+    width: 45%;
+  }
+  .footer .left {
+    padding: 0 1.5rem;
+    display: none;
+  }
+  .group5 {
+    height: 160vh;
+  }
+  .group6 {
+    padding: 0;
+  }
+  .bottom h1 {
+    font-size: 3.5rem;
+  }
+  .group5 .form {
+    left: auto;
+  }
+  .bottom p {
+    font-size: 1rem;
+  }
+  .choose p {
+    display: none;
+  }
+  .form input {
+    padding: 20px 140px 10px 20px;
+  }
+  .category .right {
+    display: none;
+  }
+  .choose h1 {
+    font-size: 1.6rem;
+  }
+  .slide .right {
+    width: auto;
+  }
+  .form button {
+    padding: 15px 77px;
+  }
+  .slide .left {
+    width: 90%;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  .right p {
+    padding-top: 0;
+  }
+  .footer .right ul {
+    padding: 0;
+  }
+  .footer .left span {
+    padding-top: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+    width: 45%;
+  }
+  .footer .left {
+    padding: 0 1.5rem;
+  }
+  .group5 {
+    height: 150vh;
+  }
+  .group6 {
+    padding: 0;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .right p {
+    padding-top: 0;
+  }
+  .footer .right ul {
+    padding: 0;
+  }
+  .footer .left span {
+    padding-top: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+    width: 45%;
+  }
+  .footer .left {
+    padding: 0 1.5rem;
+  }
+  .group5 {
+    height: 150vh;
+  }
+  .group6 {
+    padding: 0;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .right p {
+    padding-top: 0;
+  }
+  .footer .right ul {
+    padding: 0;
+  }
+  .footer .left span {
+    padding-top: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+    width: 45%;
+  }
+  .footer .left {
+    padding: 0 1.5rem;
+  }
+  .group5 {
+    height: 150vh;
+  }
+  .group6 {
+    padding: 0;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .right p {
+    padding-top: 0;
+  }
+  .footer .right ul {
+    padding: 0;
+  }
+  .footer .left span {
+    padding-top: 0;
+  }
+  .footer .right {
+    padding-left: 0;
+    width: 45%;
+  }
+  .footer .left {
+    padding: 0 1.5rem;
+  }
+  .group5 {
+    height: 150vh;
+  }
+  .group6 {
+    padding: 0;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
